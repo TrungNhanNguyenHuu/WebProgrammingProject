@@ -1,0 +1,19 @@
+#header1 {
+  background-image: url('picture/picture1_header.png');/*include a picture 1920x1080; First step is choosing the image with high quality*/
+  padding: 0px;/*remove the original padding of this div*/
+  height: 300px;/*increase the height(vertical) of this div to 300px; Using Paint Software to cut the part with height 300px*/
+  background-size: cover;/*The first step is very important, high quality picture, this step is not so important; background-size: 100% 100%;*/
+  display: flex;            /*Step 1 to align item center vertically and horizontally*/
+  justify-content: center;  /*Step 2: center horizontally*/
+  align-items: center;      /*Step 3: center verically*/
+}
+
+#header1 p{
+  margin: 0px;/*remove the original margin*/
+  color: white;/*color the word*/
+  font-weight: 900; 
+  font-size: 45px;/*size of the word*/
+  background-color: rgba(0, 0, 0, 0.35);/*background color is black and blur*/
+  padding: 50px;
+  border-radius: 50px;/*Rounded the corners*/
+}
