@@ -12,8 +12,8 @@
   margin: 0px;/*remove the original margin*/
   color: white;/*color the word*/
   font-weight: 900; 
-  font-size: 45px;/*size of the word*/
+  font-size: xx-large;/*size of the word*/
   background-color: rgba(0, 0, 0, 0.35);/*background color is black and blur*/
-  padding: 50px;
-  border-radius: 50px;/*Rounded the corners*/
+  padding: 45px;
+  border-radius: 30px;/*Rounded the corners*/
 }

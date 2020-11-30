@@ -1,0 +1,46 @@
+#coverExercise, #coverExercise * {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#Exercise_div_1 {
+  background-image: linear-gradient(to right, rgba(75,186,220,0.2),                               
+                                              rgba(75,186,220,0.6),  
+                                              rgba(75,186,220,1));
+  height: 493px;
+  /*display: flex;*/ /*Step 1 to center the element*/
+  /*justify-content: center;*/ /*Step 2: center horizontally*/  
+  /*align-items: center;*/ /*Step 3: center verically*/
+}
+
+#Exercise_div_1 #Exercise_div_2 > p {
+  font-size: large;
+  font-weight: bold;
+  /*color: white;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 15px;
+  border-radius: 15px;
+  */
+}
+
+#Exercise_TableSinger {
+  border-collapse: collapse;
+}
+
+#Exercise_TableSinger th, #Exercise_TableSinger td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#Exercise_div_3 {
+  display: flex; /*Step 1 to center the element*/
+  justify-content: center; /*Step 2: center horizontally*/  
+  /*align-items: center;*/ /*Step 3: center verically*/  
+}
+
+#Exercise_Form_AddSinger {
+  border: 2px solid black;
+  margin-left: 25px;
+}
