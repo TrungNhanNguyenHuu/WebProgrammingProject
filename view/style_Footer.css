@@ -1,0 +1,20 @@
+#footer1 {
+  padding: 0px;/*remove the original padding of this div*/
+  height: 60px;
+  background-image: url('../view/picture/picture2_footer.png');/*include a picture 1920x1080; First step is choosing the image with high quality*/
+  background-size: cover;
+  display: flex;            /*Step 1 to align item center vertically and horizontally*/
+  justify-content: center;  /*Step 2: center horizontally*/
+  align-items: center;      /*Step 3: center verically*/
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#footer1 p {
+  margin: 0px;/*remove the original margin*/
+  background-color: rgba(0, 0, 0, 0.35);/*background color is black and blur*/
+  color: white;
+  padding: 5px;
+  border-radius: 10px;/*Rounded the corners*/
+}

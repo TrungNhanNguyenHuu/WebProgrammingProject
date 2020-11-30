@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--Bootstrap 4 CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+    <!--Icons Tutorial from W3School-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--External CSS file used for this HTML document-->
+    <link rel="stylesheet" href="../view/style_NavBar.css">
+  </head>
+  <body>   
+    <div id="coverNavBar">
+      <nav>
+        <ul id="NavBarUL1">
+          <li class="NavBarItem"><a href='#'><i class='fas fa-home'></i> Home</a></li>
+          <!--DropDown Start-->
+          <li id="NavBardropdown" class="dropdown"> <!--class ".dropdown" indicates a dropdown menu Boostrap 4-->
+            <!--To open the dropdown menu | class of .dropdown-toggle has the caret down | the data-toggle="dropdown click to drop down"-->
+            <a href='#'><i class='fas fa-shopping-cart'></i> Product <i class='fas fa-caret-down'></i></a>
+            <div id="NavBardropdownmenu" class="dropdown-menu">
+              <a class="dropdown-item" href='#'>Option 1</a>
+              <a class="dropdown-item" href='#'>Option 2</a>
+            </div>
+          </li>
+          <!--DropDown End-->
+          <li class="NavBarItem"><a href='#'><i class='fas fa-search'></i> Search</a></li>
+          <li class="NavBarItemLogin"><a href='#'><i class='fas fa-sign-in-alt'></i> Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>    
+</html>

@@ -1,0 +1,123 @@
+#coverNavBar, #coverNavBar * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/*
+#coverNavBar nav ul .NavBarItem a {
+  padding: 20px;
+}
+
+#coverNavBar nav ul .NavBarItem a:hover {
+  background-color: rgb(15,186,220);
+  border-radius: 10px;
+}
+
+
+
+
+->Style Drop Down start
+#coverNavBar nav ul .NavBarItemDropDown a {
+  padding: 20px;
+}
+
+#coverNavBar nav ul .NavBarItemDropDown a:hover {
+  background-color: rgb(15,186,220);
+  border-radius: 10px;
+}
+*/
+
+#coverNavBar nav {
+  background-image: linear-gradient(to right, rgba(75,186,220,1), rgba(75,186,220,0.3), 
+  rgba(220,109,75,0.3), rgba(220,109,75,1), rgba(220,109,15,0.3),
+  rgba(113,220,75,0.3), rgba(113,220,75,1));
+  display: flex;
+  justify-content: center; /*Step 2: center horizontally*/  
+  /*align-items: center;*/ /*Step 3: center verically*/
+  padding: 25px;
+}
+
+#NavBarUL1 {
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#NavBarUL1 > li {
+  display: inline; /*-> change to display: block if width < 700px*/
+}
+
+@media screen and (max-width: 890px) {
+  #NavBarUL1 > li {
+    display: block;
+  }
+}
+
+/*Navbar dropdown hover in boostratp 4*/
+/*.dropdown:hover>.dropdown-menu { 
+  display: block;
+}*/
+#NavBardropdown:hover > #NavBardropdownmenu{
+  display: block;
+}
+
+#coverNavBar #NavBarUL1 li > a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#coverNavBar #NavBarUL1 > li {
+  padding: 15px;
+}
+
+.NavBarItemLogin a {
+  background-color: rgb(220,109,75);
+  border-radius: 10px;
+}
+
+#coverNavBar #NavBarUL1 .NavBarItemLogin > a:hover {
+  color:  rgba(75,186,220);
+}
+
+#coverNavBar #NavBarUL1 .NavBarItem > a:hover {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;
+}
+
+#coverNavBar #NavBarUL1 #NavBardropdown > a:hover {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;
+}
+
+/*Style the drop down content*/
+#NavBardropdownmenu {
+  right: 0px;
+  border: 0px;
+  width: 164px;
+  margin-left: 15px;
+  background-color: rgb(51,51,51);
+}
+
+#NavBardropdownmenu > a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#NavBardropdownmenu > a:hover {
+  background-color: rgba(113,220,75);
+  border-radius: 3px;
+}
+
+#NavBardropdown:hover > a {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;  
+}

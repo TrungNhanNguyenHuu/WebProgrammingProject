@@ -1,0 +1,25 @@
+#coverHomePage, #coverHomePage * {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#HomePageWelcome {
+  background-image: linear-gradient(to right, rgba(75,186,220,0.2),                               
+                                              rgba(75,186,220,0.6),  
+                                              rgba(75,186,220,1));
+  height: 493px;
+  display: flex; /*Step 1 to center the element*/
+  justify-content: center; /*Step 2: center horizontally*/  
+  align-items: center; /*Step 3: center verically*/
+}
+
+#HomePageWelcome > p {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.35);/*background color is black and blur*/
+  padding: 25px;
+  border-radius: 50px;
+}
