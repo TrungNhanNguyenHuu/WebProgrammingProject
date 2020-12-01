@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--Bootstrap 4 CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+    <!--External CSS file used for this HTML document-->
+    <link rel="stylesheet" href="../view/style_Login.css">
+  </head>
+  <body>   
+    <div id="coverLogin" class="container-fluid">
+      <div id="Login_Content">
+        <form action="../controller/controller_Login.php" id="LoginForm" method="POST">
+          <p>Sign In</p>
+          <div class="Login_userName_passWord">
+            <div>Username</div>
+            <input type="text" id="Login_userName" name="Login_userName">
+          </div>
+          <div class="Login_userName_passWord">
+            <div>Password</div>
+            <input type="password" id="Login_passWord" name="Login_passWord">
+          </div>
+          <div id="Login_Option">
+            <label class="radio-inline">
+              <input type="radio" name="opUser" value="1" checked> Member
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="opUser" value="2"> VIP
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="opUser" value="3"> Admin
+            </label>
+          </div>
+          <div id ="Login_Btn_Submit_div">
+            <button id="Login_Btn_Submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--JavaScript file for this HTML document-->
+    <script src="../view/script_Login.js"></script>
+  </body>    
+</html>
