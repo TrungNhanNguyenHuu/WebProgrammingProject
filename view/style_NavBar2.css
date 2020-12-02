@@ -1,0 +1,123 @@
+#coverNavBar_2, #coverNavBar_2 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/*
+#coverNavBar nav ul .NavBarItem a {
+  padding: 20px;
+}
+
+#coverNavBar nav ul .NavBarItem a:hover {
+  background-color: rgb(15,186,220);
+  border-radius: 10px;
+}
+
+
+
+
+->Style Drop Down start
+#coverNavBar nav ul .NavBarItemDropDown a {
+  padding: 20px;
+}
+
+#coverNavBar nav ul .NavBarItemDropDown a:hover {
+  background-color: rgb(15,186,220);
+  border-radius: 10px;
+}
+*/
+
+#coverNavBar_2 nav {
+  background-image: linear-gradient(to right, rgba(75,186,220,1), rgba(75,186,220,0.3), 
+  rgba(220,109,75,0.3), rgba(220,109,75,1), rgba(220,109,15,0.3),
+  rgba(113,220,75,0.3), rgba(113,220,75,1));
+  display: flex;
+  justify-content: center; /*Step 2: center horizontally*/  
+  /*align-items: center;*/ /*Step 3: center verically*/
+  padding: 25px;
+}
+
+#NavBarUL1_2 {
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#NavBarUL1_2 > li {
+  display: inline; /*-> change to display: block if width < 700px*/
+}
+
+@media screen and (max-width: 890px) {
+  #NavBarUL1_2 > li {
+    display: block;
+  }
+}
+
+/*Navbar dropdown hover in boostratp 4*/
+/*.dropdown:hover>.dropdown-menu { 
+  display: block;
+}*/
+#NavBardropdown_2:hover > #NavBardropdownmenu_2{
+  display: block;
+}
+
+#coverNavBar_2 #NavBarUL1_2 li > a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#coverNavBar_2 #NavBarUL1_2 > li {
+  padding: 15px;
+}
+
+.NavBarItemLogin a {
+  background-color: rgb(220,109,75);
+  border-radius: 10px;
+}
+
+#coverNavBar_2 #NavBarUL1_2 .NavBarItemLogin > a:hover {
+  color:  rgba(75,186,220);
+}
+
+#coverNavBar_2 #NavBarUL1_2 .NavBarItem > a:hover {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;
+}
+
+#coverNavBar_2 #NavBarUL1_2 #NavBardropdown_2 > a:hover {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;
+}
+
+/*Style the drop down content*/
+#NavBardropdownmenu_2 {
+  right: 0px;
+  border: 0px;
+  width: 164px;
+  margin-left: 15px;
+  background-color: rgb(51,51,51);
+}
+
+#NavBardropdownmenu_2 > a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#NavBardropdownmenu_2 > a:hover {
+  background-color: rgba(113,220,75);
+  border-radius: 3px;
+}
+
+#NavBardropdown_2:hover > a {
+  background-color: rgb(75,186,220);
+  border-radius: 10px;  
+}
