@@ -1,0 +1,91 @@
+#coverSearch, #coverSearch * {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#Search_Content {
+  background-image: linear-gradient(to right, rgba(75,186,220,0.2),                               
+                                              rgba(75,186,220,0.6),  
+                                              rgba(75,186,220,1));
+  height: 493px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#Search_Input_Group > input {
+  font-size: x-large;
+  font-weight: bold;
+  width: 650px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#Search_btn > input {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(220,109,75);
+  color: white;
+  border-radius: 10px;
+}
+
+#Search_Input_Group {
+  display: flex;
+}
+
+#Search_btn {
+  margin-left: 10px;
+}
+
+#Search_List {
+  /*font-size: x-large;
+  font-weight: bold;
+  width: 450px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;  */
+  margin-top: 3px;
+  width: 450px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+
+#Search_List > p {
+  font-size: x-large;
+  font-weight: bold;
+  width: 450px;
+  padding: 15px; 
+  border-bottom: 1px solid gray;
+}
+
+#Search_List > p > a {
+  text-decoration: none;
+  color: black;
+}
+/*
+#HomePageWelcome2 {
+  background-image: linear-gradient(to right, rgba(75,186,220,0.2),                               
+                                              rgba(75,186,220,0.6),  
+                                              rgba(75,186,220,1));
+  height: 493px;
+  display: flex; Step 1 to center the element
+  justify-content: center; Step 2: center horizontally
+  align-items: center; Step 3: center verically
+}
+
+#HomePageWelcome2 > p {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.35);background color is black and blur
+  padding: 25px;
+  border-radius: 50px;
+}
+
+#HomePageWelcome2 span {
+ color: rgb(220,109,75);
+}
+*/

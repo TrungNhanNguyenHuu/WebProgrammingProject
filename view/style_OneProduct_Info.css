@@ -1,0 +1,28 @@
+#cover_OneProduct_Info, #cover_OneProduct_Info * {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#OneProduct_Info_Content {
+  background-image: linear-gradient(to right, rgba(75,186,220,0.2),                               
+                                              rgba(75,186,220,0.6),  
+                                              rgba(75,186,220,1));
+  height: 493px;
+  display: flex; /*Step 1 to center the element*/
+  justify-content: center; /*Step 2: center horizontally*/  
+  align-items: center; /*Step 3: center verically*/
+}
+
+#OneProduct_Info_PHPcode {
+  background-color: rgba(0, 0, 0, 0.35);/*background color is black and blur*/
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#OneProduct_Info_PHPcode > p {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
