@@ -86,11 +86,66 @@
                   mysqli_query($conn, $sql);
                 }   
               ?>
+              <?php
+                // PHP code: Close the connection to DataBase
+                mysqli_close($conn); 
+              ?>
+              <!-- Exercise Create a new DB with at least one table-->
+              <div>
+                <form action="" method="post" id="Exercise_Form_Add_DB">
+                  <label>Create a new DB with at least one table</label><br><br>
+                  <label for="f_DataBase">DataBase Name:</label><br>
+                  <input type="text" id="f_DataBase" name="f_DataBase"><br>
+                  <label for="f_TableName">Table Name:</label><br>
+                  <input type="text" id="f_TableName" name="f_TableName"><br><br>     
+                  <input type="submit" name="f_submit02" value="Submit">
+                </form>
+              </div>
+              <?php
+                if (isset($_POST['f_submit02'])) {
+                  $nameDataBase = $_POST['f_DataBase'];
+                  $nameTable = $_POST['f_TableName'];
+
+                  //Create a new DB
+                  $conn = mysqli_connect($servername, $username, $password);
+                  if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                  }
+
+                  $sql = "CREATE DATABASE $nameDataBase";
+                  if (mysqli_query($conn,$sql)) {
+
+                  } else {
+                    echo "Error creating new database: " .mysqli_error($conn);
+                  }
+                  
+                  mysqli_close($conn);
+
+                  //Create a 1 new Table
+                  $conn = mysqli_connect($servername, $username, $password, $nameDataBase);
+                  if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                  }
+
+                  $sql = "CREATE TABLE $nameTable (
+                    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                    column1 VARCHAR(30),
+                    column2 VARCHAR(30),
+                    column3 VARCHAR(50),
+                    column4 VARCHAR(50),
+                    column5 VARCHAR(50)
+                    )";
+                  
+                  if (mysqli_query($conn, $sql)) {
+                    
+                  } else {
+                    echo "Error creating table: " . mysqli_error($conn);
+                  }
+                  
+                  mysqli_close($conn);
+                }                
+              ?>
             </div>
-            <?php
-              // PHP code: Close the connection to DataBase
-              mysqli_close($conn); 
-            ?>
           </div>
         </div>
       </div>
